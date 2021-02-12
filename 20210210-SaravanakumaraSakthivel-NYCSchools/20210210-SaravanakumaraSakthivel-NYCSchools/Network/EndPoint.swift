@@ -29,6 +29,11 @@ extension EndPoint {
                                      URLQueryItem(name: Configuration.offsetQuer, value: offset)]
         )
     }
+    
+    static func getSATScoreEndPoint(for schoolDbn: String) -> EndPoint {
+        return EndPoint(path: Configuration.satScorePath,
+                        queryItems: [URLQueryItem(name: Configuration.satScoreQuery, value: schoolDbn)])
+    }
 }
 
 extension EndPoint {

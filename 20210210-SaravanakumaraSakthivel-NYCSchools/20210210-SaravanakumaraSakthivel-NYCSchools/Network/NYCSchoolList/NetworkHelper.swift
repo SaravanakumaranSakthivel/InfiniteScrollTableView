@@ -13,7 +13,7 @@ import Foundation
     Improvements : Design a caching mechanism and fetch the data from cache, if the data is not present in cache we can make a service call to get a data.
  **/
 
-struct NYCSchoolListNetworkHelper {
+struct NetworkHelper {
    
     internal static func getNYCSchoolList(_ offset: String, handler: @escaping(([NYCSchoolModel]?) ->Void)) {
         
@@ -21,6 +21,16 @@ struct NYCSchoolListNetworkHelper {
             NYCSchoolListRequest.executeRequest(endPoint,
                                             then:{ responseArr, Error in
                                                 handler(responseArr)
+        })
+    }
+    
+    internal static func getSATDetail(for schoolDbn: String, handler: @escaping((SATScoreDetailModel?) -> Void)) {
+        let endPoint = EndPoint.getSATScoreEndPoint(for: schoolDbn)
+        SATScoreDetailRequest.executeRequest(endPoint,
+                                             then: { response, Error in
+                                                if let responseArr = response{
+                                                    handler(responseArr.first)
+                                                }
         })
     }
    

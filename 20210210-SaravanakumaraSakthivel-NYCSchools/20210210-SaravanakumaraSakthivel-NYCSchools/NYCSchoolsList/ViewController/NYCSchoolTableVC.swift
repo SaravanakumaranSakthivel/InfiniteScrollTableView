@@ -39,7 +39,7 @@ class NYCSchoolTableVC: UITableViewController {
     
     internal func fetchSchoolData() {
         let currentCount = String(self.dataSource.count + 1)
-        NYCSchoolListNetworkHelper.getNYCSchoolList(currentCount, handler: { response in
+        NetworkHelper.getNYCSchoolList(currentCount, handler: { response in
             guard let response = response else {
                 return
             }
@@ -95,6 +95,13 @@ extension NYCSchoolTableVC {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            
+        if self.dataSource.count != 0 {
+            let selectedSchoolModel = self.dataSource[indexPath.row]
+            guard let satDetailVC = self.storyboard?.instantiateViewController(identifier: "satViewController") as? SATScoreDetailVC else { return  }
+            self.navigationController?.pushViewController(satDetailVC, animated: true)
+            satDetailVC.schoolModel = selectedSchoolModel
+        }
         
     }
 

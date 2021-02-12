@@ -7,32 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EFB36895-E9A1-4FD9-901D-B16A3EE66312"
+            uuid = "AF51A3BD-21F1-42E8-91C3-E127D4019A6D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "20210210-SaravanakumaraSakthivel-NYCSchools/NYCSchoolsList/ViewController/NYCSchoolTableVC.swift"
+            filePath = "20210210-SaravanakumaraSakthivel-NYCSchools/SATScoreDetail/ViewModels/SATScoreDetailVCViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "fetchSchoolData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EC212C65-D121-4889-B69F-2A93FA5501EB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "20210210-SaravanakumaraSakthivel-NYCSchools/NYCSchoolsList/ViewController/NYCSchoolTableVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "scrollViewDidScroll(_:)"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "init(_:collegeModel:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

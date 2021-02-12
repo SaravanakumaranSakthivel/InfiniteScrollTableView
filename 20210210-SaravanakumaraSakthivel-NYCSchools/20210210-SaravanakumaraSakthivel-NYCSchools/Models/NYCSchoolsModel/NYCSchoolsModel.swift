@@ -24,15 +24,15 @@ import Foundation
  **/
 
 internal struct NYCSchoolModel: Codable {
-    internal var dbn: String?
-    internal var school_name: String?
-    internal var overview_paragraph: String?
-    internal var website: String?
-    internal var phone_number: String?
-    internal var fax_number: String?
-    internal var school_email: String?
-    internal var primary_address_line_1: String?
-    internal var city: String?
-    internal var zip: String?
-    internal var state_code: String?
+    internal let dbn: String?
+    internal let school_name: String?
+    internal let overview_paragraph: String?
+    internal let website: String?
+    internal let phone_number: String?
+    internal let fax_number: String?
+    internal let school_email: String?
+    internal let primary_address_line_1: String?
+    internal let city: String?
+    internal let zip: String?
+    internal let state_code: String?
 }

@@ -7,6 +7,10 @@
 
 import UIKit
 
+/*
+    This is the cell used in the section 1 of the tableview, This helps to indicate in UI that we fetching and reloading new set of data from the backend.
+ **/
+
 class NYCLoadingCell: UITableViewCell {
 
     override func awakeFromNib() {

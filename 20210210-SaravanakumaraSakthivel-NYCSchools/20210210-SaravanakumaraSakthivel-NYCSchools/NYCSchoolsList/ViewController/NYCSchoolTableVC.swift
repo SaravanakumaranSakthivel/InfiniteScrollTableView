@@ -7,10 +7,16 @@
 
 import UIKit
 
+/*
+    This is the table view controller to list all NYC Schools.
+    We are loading 10 records at a time when we scorll up we will loading next set of 10 records along with the existing data.
+ **/
+
+
 class NYCSchoolTableVC: UITableViewController {
     
     var isLoading = false
-    var dataSource = [1,2,3,4,5,6,7,8,9,10]
+    var dataSource = [NYCSchoolModel]()
 
 
     override func viewDidLoad() {
@@ -26,6 +32,27 @@ class NYCSchoolTableVC: UITableViewController {
         //Register school Cell
         let schoolCell = UINib(nibName: "NYCSchoolCell", bundle: nil)
         self.tableView.register(schoolCell, forCellReuseIdentifier: "schoolcellidentifier")
+        
+        self.fetchSchoolData()
+       
+    }
+    
+    internal func fetchSchoolData() {
+        let currentCount = String(self.dataSource.count + 1)
+        NYCSchoolListNetworkHelper.getNYCSchoolList(currentCount, handler: { response in
+            guard let response = response else {
+                return
+            }
+            
+            self.dataSource = self.dataSource + response
+            self.loadTableview()
+        })
+    }
+    
+    internal func loadTableview() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 
 }
@@ -44,6 +71,10 @@ extension NYCSchoolTableVC {
         return 0
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120.0
+    }
+    
     override  func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
@@ -51,6 +82,11 @@ extension NYCSchoolTableVC {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "schoolcellidentifier", for: indexPath) as! NYCSchoolCell
+            let schoolModel = self.dataSource[indexPath.row]
+            let cellViewModel = NYCSchoolCellViewModel(nycSchoolModel: schoolModel)
+            cell.accessoryType = .disclosureIndicator
+            cell.selectionStyle = .none
+            cell.configureView(cellViewModel)
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "loadingcellid", for: indexPath) as! NYCLoadingCell
@@ -71,6 +107,9 @@ extension NYCSchoolTableVC {
             }
         }
     
+    /*
+        This method helps to fetch next set of data when we do swipe up
+     **/
     func loadMoreData() {
             if !self.isLoading {
                 self.isLoading = true
@@ -78,11 +117,8 @@ extension NYCSchoolTableVC {
                     // Fake background loading task for 2 seconds
                     sleep(2)
                     // Download more data here
-                    
-                    DispatchQueue.main.async {
-                        self.tableView.reloadData()
-                        self.isLoading = false
-                    }
+                    self.fetchSchoolData()
+                    self.isLoading = false
                 }
             }
         }

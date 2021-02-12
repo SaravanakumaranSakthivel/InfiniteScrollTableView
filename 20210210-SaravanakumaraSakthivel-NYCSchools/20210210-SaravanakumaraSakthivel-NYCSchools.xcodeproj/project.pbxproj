@@ -21,8 +21,10 @@
 		43F516D325D4F234009633AA /* NYCSchoolTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F516D225D4F234009633AA /* NYCSchoolTableVC.swift */; };
 		43F516DC25D4F95D009633AA /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F516DB25D4F95D009633AA /* Configuration.swift */; };
 		43F516E525D4FB75009633AA /* NYCSchoolListNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F516E425D4FB75009633AA /* NYCSchoolListNetworkHelper.swift */; };
-		43F516ED25D4FF43009633AA /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F516EC25D4FF43009633AA /* BaseRequest.swift */; };
 		43F516F225D50183009633AA /* NYCSchoolListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F516F125D50183009633AA /* NYCSchoolListRequest.swift */; };
+		43F516F725D5AF3B009633AA /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F516F625D5AF3B009633AA /* EndPoint.swift */; };
+		43F5170025D5E183009633AA /* NYCSchoolsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F516FF25D5E183009633AA /* NYCSchoolsModel.swift */; };
+		43F5170A25D62FC7009633AA /* NYCSchoolCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F5170925D62FC7009633AA /* NYCSchoolCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +65,10 @@
 		43F516D225D4F234009633AA /* NYCSchoolTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolTableVC.swift; sourceTree = "<group>"; };
 		43F516DB25D4F95D009633AA /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		43F516E425D4FB75009633AA /* NYCSchoolListNetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolListNetworkHelper.swift; sourceTree = "<group>"; };
-		43F516EC25D4FF43009633AA /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		43F516F125D50183009633AA /* NYCSchoolListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolListRequest.swift; sourceTree = "<group>"; };
+		43F516F625D5AF3B009633AA /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		43F516FF25D5E183009633AA /* NYCSchoolsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolsModel.swift; sourceTree = "<group>"; };
+		43F5170925D62FC7009633AA /* NYCSchoolCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		43F5167B25D4D773009633AA /* 20210210-SaravanakumaraSakthivel-NYCSchools */ = {
 			isa = PBXGroup;
 			children = (
+				43F516FE25D5E16D009633AA /* Models */,
 				43F516E325D4FB3A009633AA /* Network */,
 				43F516DA25D4F94A009633AA /* Utility */,
 				43F516B225D4DE96009633AA /* NYCSchoolsList */,
@@ -149,6 +154,7 @@
 		43F516B225D4DE96009633AA /* NYCSchoolsList */ = {
 			isa = PBXGroup;
 			children = (
+				43F5170825D62FB1009633AA /* ViewModels */,
 				43F516C025D4E8E7009633AA /* Views */,
 				43F516BF25D4E8DC009633AA /* ViewController */,
 			);
@@ -186,10 +192,26 @@
 			isa = PBXGroup;
 			children = (
 				43F516E425D4FB75009633AA /* NYCSchoolListNetworkHelper.swift */,
-				43F516EC25D4FF43009633AA /* BaseRequest.swift */,
 				43F516F125D50183009633AA /* NYCSchoolListRequest.swift */,
+				43F516F625D5AF3B009633AA /* EndPoint.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		43F516FE25D5E16D009633AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				43F516FF25D5E183009633AA /* NYCSchoolsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		43F5170825D62FB1009633AA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				43F5170925D62FC7009633AA /* NYCSchoolCellViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,12 +346,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43F516ED25D4FF43009633AA /* BaseRequest.swift in Sources */,
 				43F516E525D4FB75009633AA /* NYCSchoolListNetworkHelper.swift in Sources */,
+				43F516F725D5AF3B009633AA /* EndPoint.swift in Sources */,
 				43F516DC25D4F95D009633AA /* Configuration.swift in Sources */,
 				43F516C325D4E911009633AA /* NYCSchoolCell.swift in Sources */,
+				43F5170A25D62FC7009633AA /* NYCSchoolCellViewModel.swift in Sources */,
 				43F516CD25D4ED48009633AA /* NYCLoadingCell.swift in Sources */,
 				43F516D325D4F234009633AA /* NYCSchoolTableVC.swift in Sources */,
+				43F5170025D5E183009633AA /* NYCSchoolsModel.swift in Sources */,
 				43F516F225D50183009633AA /* NYCSchoolListRequest.swift in Sources */,
 				43F5167D25D4D773009633AA /* AppDelegate.swift in Sources */,
 				43F5167F25D4D773009633AA /* SceneDelegate.swift in Sources */,

@@ -21,10 +21,16 @@ class NYCSchoolTableVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         configureTableView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.topItem?.title = "NYC Schools"
+    }
+    
     internal func configureTableView() {
+
         //Register Loading Cell
         let tableViewLoadingCellNib = UINib(nibName: "NYCLoadingCell", bundle: nil)
         self.tableView.register(tableViewLoadingCellNib, forCellReuseIdentifier: "loadingcellid")

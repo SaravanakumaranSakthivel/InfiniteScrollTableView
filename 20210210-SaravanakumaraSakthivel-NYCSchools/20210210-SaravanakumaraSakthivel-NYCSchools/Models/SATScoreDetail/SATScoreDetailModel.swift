@@ -19,10 +19,10 @@ import Foundation
  **/
 
 internal struct SATScoreDetailModel: Codable {
-    internal let dbn : String
-    internal let school_name: String
-    internal let num_of_sat_test_takers: String
-    internal let sat_critical_reading_avg_score: String
-    internal let sat_math_avg_score: String
-    internal let sat_writing_avg_score: String
+    internal let dbn : String?
+    internal let school_name: String?
+    internal let num_of_sat_test_takers: String?
+    internal let sat_critical_reading_avg_score: String?
+    internal let sat_math_avg_score: String?
+    internal let sat_writing_avg_score: String?
 }

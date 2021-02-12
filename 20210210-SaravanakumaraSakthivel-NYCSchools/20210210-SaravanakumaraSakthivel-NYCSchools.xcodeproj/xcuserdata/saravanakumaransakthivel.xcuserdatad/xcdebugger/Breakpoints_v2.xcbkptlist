@@ -14,9 +14,57 @@
             filePath = "20210210-SaravanakumaraSakthivel-NYCSchools/SATScoreDetail/ViewModels/SATScoreDetailVCViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "init(_:collegeModel:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AF51A3BD-21F1-42E8-91C3-E127D4019A6D - 46dc5877ab65ef65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_0210210_SaravanakumaraSakthivel_NYCSchools.SATScoreDetailVCViewModel.init(_: _0210210_SaravanakumaraSakthivel_NYCSchools.SATScoreDetailModel, collegeModel: _0210210_SaravanakumaraSakthivel_NYCSchools.NYCSchoolModel) -&gt; _0210210_SaravanakumaraSakthivel_NYCSchools.SATScoreDetailVCViewModel"
+                  moduleName = "20210210-SaravanakumaraSakthivel-NYCSchools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saravanakumaransakthivel/Workspace/Interview_Coding_Challenge_2021/nycschools/20210210-SaravanakumaraSakthivel-NYCSchools/20210210-SaravanakumaraSakthivel-NYCSchools/SATScoreDetail/ViewModels/SATScoreDetailVCViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1296">
+               </Location>
+               <Location
+                  uuid = "AF51A3BD-21F1-42E8-91C3-E127D4019A6D - 91851499ec8258c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_0210210_SaravanakumaraSakthivel_NYCSchoolsTests.SATScoreDetailVCViewModel.init(_: _0210210_SaravanakumaraSakthivel_NYCSchoolsTests.SATScoreDetailModel, collegeModel: _0210210_SaravanakumaraSakthivel_NYCSchoolsTests.NYCSchoolModel) -&gt; _0210210_SaravanakumaraSakthivel_NYCSchoolsTests.SATScoreDetailVCViewModel"
+                  moduleName = "20210210-SaravanakumaraSakthivel-NYCSchoolsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saravanakumaransakthivel/Workspace/Interview_Coding_Challenge_2021/nycschools/20210210-SaravanakumaraSakthivel-NYCSchools/20210210-SaravanakumaraSakthivel-NYCSchools/SATScoreDetail/ViewModels/SATScoreDetailVCViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1296">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4E0A9895-5C5E-4097-A8E5-A8EFAB89F994"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "20210210-SaravanakumaraSakthivel-NYCSchoolsTests/NYCSchoolCellViewModelTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "testCombinedAddressWithValidField()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

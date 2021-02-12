@@ -34,7 +34,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="ICP-as-fgh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="2nY-yQ-pQ4"/>
                     <constraint firstAttribute="trailing" secondItem="ICP-as-fgh" secondAttribute="trailing" constant="20" id="FhZ-R0-Iqv"/>
@@ -46,6 +46,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="combinedAddressLabel" destination="BbU-nF-eU7" id="imI-15-Xur"/>
                 <outlet property="schoolNameLabel" destination="ICP-as-fgh" id="okk-Er-lkf"/>

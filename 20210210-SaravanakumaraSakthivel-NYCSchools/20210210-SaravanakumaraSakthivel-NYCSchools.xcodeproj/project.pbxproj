@@ -11,6 +11,14 @@
 		43E8DDA325D65CAA0013C112 /* SATScoreDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8DDA225D65CAA0013C112 /* SATScoreDetailModel.swift */; };
 		43E8DDA825D65EB10013C112 /* SATScoreDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8DDA725D65EB10013C112 /* SATScoreDetailRequest.swift */; };
 		43E8DDB225D66A5A0013C112 /* SATScoreDetailVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8DDB125D66A5A0013C112 /* SATScoreDetailVCViewModel.swift */; };
+		43E8DDB725D6E8440013C112 /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8DDB625D6E8440013C112 /* ConfigurationTests.swift */; };
+		43E8DDBB25D6E91B0013C112 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F516DB25D4F95D009633AA /* Configuration.swift */; };
+		43E8DDC025D6FA290013C112 /* NYCSchoolCellViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8DDBF25D6FA290013C112 /* NYCSchoolCellViewModelTest.swift */; };
+		43E8DDC425D6FA940013C112 /* NYCSchoolCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F5170925D62FC7009633AA /* NYCSchoolCellViewModel.swift */; };
+		43E8DDC825D6FAA30013C112 /* NYCSchoolsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F516FF25D5E183009633AA /* NYCSchoolsModel.swift */; };
+		43E8DDD025D7031A0013C112 /* SATScoreDetailVCViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8DDCF25D7031A0013C112 /* SATScoreDetailVCViewModelTest.swift */; };
+		43E8DDD425D703200013C112 /* SATScoreDetailVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8DDB125D66A5A0013C112 /* SATScoreDetailVCViewModel.swift */; };
+		43E8DDD825D703430013C112 /* SATScoreDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8DDA225D65CAA0013C112 /* SATScoreDetailModel.swift */; };
 		43F5167D25D4D773009633AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F5167C25D4D773009633AA /* AppDelegate.swift */; };
 		43F5167F25D4D773009633AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F5167E25D4D773009633AA /* SceneDelegate.swift */; };
 		43F5168425D4D773009633AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F5168225D4D773009633AA /* Main.storyboard */; };
@@ -53,6 +61,9 @@
 		43E8DDA225D65CAA0013C112 /* SATScoreDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScoreDetailModel.swift; sourceTree = "<group>"; };
 		43E8DDA725D65EB10013C112 /* SATScoreDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScoreDetailRequest.swift; sourceTree = "<group>"; };
 		43E8DDB125D66A5A0013C112 /* SATScoreDetailVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScoreDetailVCViewModel.swift; sourceTree = "<group>"; };
+		43E8DDB625D6E8440013C112 /* ConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
+		43E8DDBF25D6FA290013C112 /* NYCSchoolCellViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolCellViewModelTest.swift; sourceTree = "<group>"; };
+		43E8DDCF25D7031A0013C112 /* SATScoreDetailVCViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScoreDetailVCViewModelTest.swift; sourceTree = "<group>"; };
 		43F5167925D4D773009633AA /* 20210210-SaravanakumaraSakthivel-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20210210-SaravanakumaraSakthivel-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F5167C25D4D773009633AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43F5167E25D4D773009633AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -205,6 +216,9 @@
 			children = (
 				43F5169325D4D777009633AA /* _0210210_SaravanakumaraSakthivel_NYCSchoolsTests.swift */,
 				43F5169525D4D777009633AA /* Info.plist */,
+				43E8DDB625D6E8440013C112 /* ConfigurationTests.swift */,
+				43E8DDBF25D6FA290013C112 /* NYCSchoolCellViewModelTest.swift */,
+				43E8DDCF25D7031A0013C112 /* SATScoreDetailVCViewModelTest.swift */,
 			);
 			path = "20210210-SaravanakumaraSakthivel-NYCSchoolsTests";
 			sourceTree = "<group>";
@@ -436,6 +450,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E8DDD825D703430013C112 /* SATScoreDetailModel.swift in Sources */,
+				43E8DDBB25D6E91B0013C112 /* Configuration.swift in Sources */,
+				43E8DDB725D6E8440013C112 /* ConfigurationTests.swift in Sources */,
+				43E8DDC825D6FAA30013C112 /* NYCSchoolsModel.swift in Sources */,
+				43E8DDC425D6FA940013C112 /* NYCSchoolCellViewModel.swift in Sources */,
+				43E8DDC025D6FA290013C112 /* NYCSchoolCellViewModelTest.swift in Sources */,
+				43E8DDD025D7031A0013C112 /* SATScoreDetailVCViewModelTest.swift in Sources */,
+				43E8DDD425D703200013C112 /* SATScoreDetailVCViewModel.swift in Sources */,
 				43F5169425D4D777009633AA /* _0210210_SaravanakumaraSakthivel_NYCSchoolsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -611,7 +633,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chasecodingchallenge.-0210210-SaravanakumaraSakthivel-NYCSchools";
+				PRODUCT_BUNDLE_IDENTIFIER = com.expriment.infiniteloadingtable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -630,7 +652,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chasecodingchallenge.-0210210-SaravanakumaraSakthivel-NYCSchools";
+				PRODUCT_BUNDLE_IDENTIFIER = com.expriment.infiniteloadingtable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

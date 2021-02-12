@@ -22,7 +22,6 @@ class SATScoreDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getSATScoreDetails()
-        
     }
     
     func getSATScoreDetails() {

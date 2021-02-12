@@ -32,10 +32,16 @@ internal struct SATScoreDetailVCViewModel: Codable {
         self.dbn = satScoreDetail.dbn
         self.school_name = satScoreDetail.school_name
         
-        self.num_of_sat_test_takers = "Total number of SAT Test Takers\n" + satScoreDetail.num_of_sat_test_takers
-        self.sat_critical_reading_avg_score = "SAT Critical reading Avg. score\n" + satScoreDetail.sat_critical_reading_avg_score
-        self.sat_math_avg_score = "SAT Math Avg. score\n" + satScoreDetail.sat_math_avg_score
-        self.sat_writing_avg_score = "SAT Writing Avg.Score\n" + satScoreDetail.sat_writing_avg_score
+        let totalSATTestTaker = satScoreDetail.num_of_sat_test_takers ?? "n/a"
+        let criticalReadingAvgScore = satScoreDetail.sat_critical_reading_avg_score ?? "n/a"
+        let mathAvgScore = satScoreDetail.sat_math_avg_score ?? "n/a"
+        let writingAvgScore = satScoreDetail.sat_writing_avg_score ?? "n/a"
+        
+        
+        self.num_of_sat_test_takers = "Total number of SAT Test Takers\n" + totalSATTestTaker
+        self.sat_critical_reading_avg_score = "SAT Critical reading Avg. score\n" + criticalReadingAvgScore
+        self.sat_math_avg_score = "SAT Math Avg. score\n" + mathAvgScore
+        self.sat_writing_avg_score = "SAT Writing Avg.Score\n" + writingAvgScore
         self.overview_paragraph = collegeModel.overview_paragraph
     }
 }

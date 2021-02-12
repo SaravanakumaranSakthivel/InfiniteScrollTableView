@@ -127,7 +127,6 @@
 		43E8DD9E25D65C110013C112 /* NYCSchoolList */ = {
 			isa = PBXGroup;
 			children = (
-				43F516E425D4FB75009633AA /* NetworkHelper.swift */,
 				43F516F125D50183009633AA /* NYCSchoolListRequest.swift */,
 			);
 			path = NYCSchoolList;
@@ -196,11 +195,11 @@
 		43F5167B25D4D773009633AA /* 20210210-SaravanakumaraSakthivel-NYCSchools */ = {
 			isa = PBXGroup;
 			children = (
+				43F516B225D4DE96009633AA /* NYCSchoolsList */,
 				43E8DD9525D652A60013C112 /* SATScoreDetail */,
 				43F516FE25D5E16D009633AA /* Models */,
 				43F516E325D4FB3A009633AA /* Network */,
 				43F516DA25D4F94A009633AA /* Utility */,
-				43F516B225D4DE96009633AA /* NYCSchoolsList */,
 				43F5167C25D4D773009633AA /* AppDelegate.swift */,
 				43F5167E25D4D773009633AA /* SceneDelegate.swift */,
 				43F5168225D4D773009633AA /* Main.storyboard */,
@@ -272,9 +271,10 @@
 		43F516E325D4FB3A009633AA /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				43F516F625D5AF3B009633AA /* EndPoint.swift */,
+				43F516E425D4FB75009633AA /* NetworkHelper.swift */,
 				43E8DD9F25D65C290013C112 /* SATScoreDetail */,
 				43E8DD9E25D65C110013C112 /* NYCSchoolList */,
-				43F516F625D5AF3B009633AA /* EndPoint.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
